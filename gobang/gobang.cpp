@@ -367,6 +367,7 @@ void Gobang::BangDebug(const char* output,...)
 
     _vsnprintf_s(buf, sizeof(buf)-1, output, vlArgs);
 
+    va_end(vlArgs);
     qDebug()<< buf;
 
 #endif
